@@ -9,7 +9,7 @@ import 'package:flutter/material.dart';
 const double kAppBarHeight = 80;
 
 const String amazonLogoUrl =
-    "https://i7.pngguru.com/preview/804/833/264/golden-retriever-pet-sitting-cat-dogs.jpg";
+    "https://cdn.freebiesupply.com/logos/large/2x/washington-huskies-3-logo-png-transparent.png";
 
 const List<String> categoriesList = [
   "Labrador Retriever",

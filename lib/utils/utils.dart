@@ -6,7 +6,7 @@ import 'package:image_picker/image_picker.dart';
 
 class Utils {
   Size getScreenSize() {
-    return MediaQueryData.fromWindow(WidgetsBinding.instance.window).size;
+    return MediaQueryData.fromWindow(WidgetsBinding.instance!.window).size;
   }
 
   showSnackBar({required BuildContext context, required String content}) {
@@ -39,7 +39,9 @@ class Utils {
   Future<Uint8List?> pickImage() async {
     ImagePicker picker = ImagePicker();
     XFile? file = await picker.pickImage(source: ImageSource.gallery);
-    return file!.readAsBytes();
+    if (file != null) {
+      return file.readAsBytes();
+    }
   }
 
   String getUid() {

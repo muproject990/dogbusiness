@@ -207,14 +207,6 @@ class IntroductionWidgetAccountScreen extends StatelessWidget {
                 ),
               ),
             ),
-            const Padding(
-              padding: EdgeInsets.only(right: 20),
-              child: CircleAvatar(
-                backgroundImage: NetworkImage(
-                  "https://m.media-amazon.com/images/I/116KbsvwCRL._SX90_SY90_.png",
-                ),
-              ),
-            )
           ],
         ),
       ),

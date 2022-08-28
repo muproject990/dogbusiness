@@ -32,15 +32,12 @@ class SearchBarWidget extends StatelessWidget with PreferredSizeWidget {
     return Container(
       height: kAppBarHeight,
       decoration: const BoxDecoration(
-        color: Colors.teal,
+        gradient: LinearGradient(
+          colors: backgroundGradient,
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
       ),
-      // decoration: const BoxDecoration(
-      //   gradient: LinearGradient(
-      //     colors: backgroundGradient,
-      //     begin: Alignment.centerLeft,
-      //     end: Alignment.centerRight,
-      //   ),
-      // ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [

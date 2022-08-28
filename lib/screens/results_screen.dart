@@ -28,14 +28,15 @@ class ResultsScreen extends StatelessWidget {
                     children: [
                       const TextSpan(
                         text: "Showing results for ",
-                        style: TextStyle(
-                          fontSize: 17,
-                        ),
+                        style: TextStyle(fontSize: 17, color: Colors.black38),
                       ),
                       TextSpan(
                         text: query,
                         style: const TextStyle(
-                            fontSize: 17, fontStyle: FontStyle.italic),
+                          fontSize: 17,
+                          fontStyle: FontStyle.italic,
+                          color: Colors.black54,
+                        ),
                       )
                     ],
                   ),

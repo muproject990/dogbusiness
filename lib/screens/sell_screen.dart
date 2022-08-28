@@ -58,7 +58,7 @@ class _SellScreenState extends State<SellScreen> {
                           children: [
                             image == null
                                 ? Image.network(
-                                    "https://m.media-amazon.com/images/I/11uufjN3lYL._SX90_SY90_.png",
+                                    "https://media.istockphoto.com/id/1048322486/photo/west-highland-terrier-in-front-of-white-background.webp?s=2048x2048&w=is&k=20&c=iKG88n7KnaOyPBCn1YbATElIboSVZtUR_YzGdRLfS2E=",
                                     height: screenSize.height / 10,
                                   )
                                 : Image.memory(
