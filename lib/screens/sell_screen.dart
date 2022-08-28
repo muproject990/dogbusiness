@@ -1,13 +1,13 @@
 import 'dart:typed_data';
 
-import 'package:amazon_clone/model/product_model.dart';
-import 'package:amazon_clone/providers/user_details_provider.dart';
-import 'package:amazon_clone/resources/cloudfirestore_methods.dart';
-import 'package:amazon_clone/utils/color_themes.dart';
-import 'package:amazon_clone/utils/utils.dart';
-import 'package:amazon_clone/widgets/custom_main_button.dart';
-import 'package:amazon_clone/widgets/loading_widget.dart';
-import 'package:amazon_clone/widgets/text_field_widget.dart';
+import 'package:dogmart/model/product_model.dart';
+import 'package:dogmart/providers/user_details_provider.dart';
+import 'package:dogmart/resources/cloudfirestore_methods.dart';
+import 'package:dogmart/utils/color_themes.dart';
+import 'package:dogmart/utils/utils.dart';
+import 'package:dogmart/widgets/custom_main_button.dart';
+import 'package:dogmart/widgets/loading_widget.dart';
+import 'package:dogmart/widgets/text_field_widget.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -163,7 +163,7 @@ class _SellScreenState extends State<SellScreen> {
                               "Sell",
                               style: TextStyle(color: Colors.black),
                             ),
-                            color: yellowColor,
+                            color: blueColor,
                             isLoading: isLoading,
                             onPressed: () async {
                               String output = await CloudFirestoreClass()

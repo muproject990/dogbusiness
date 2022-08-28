@@ -1,11 +1,11 @@
-import 'package:amazon_clone/model/product_model.dart';
-import 'package:amazon_clone/resources/cloudfirestore_methods.dart';
-import 'package:amazon_clone/screens/product_screen.dart';
-import 'package:amazon_clone/utils/color_themes.dart';
-import 'package:amazon_clone/utils/utils.dart';
-import 'package:amazon_clone/widgets/custom_simple_rounded_button.dart';
-import 'package:amazon_clone/widgets/custom_square_button.dart';
-import 'package:amazon_clone/widgets/product_information_widget.dart';
+import 'package:dogmart/model/product_model.dart';
+import 'package:dogmart/resources/cloudfirestore_methods.dart';
+import 'package:dogmart/screens/product_screen.dart';
+import 'package:dogmart/utils/color_themes.dart';
+import 'package:dogmart/utils/utils.dart';
+import 'package:dogmart/widgets/custom_simple_rounded_button.dart';
+import 'package:dogmart/widgets/custom_square_button.dart';
+import 'package:dogmart/widgets/product_information_widget.dart';
 import 'package:flutter/material.dart';
 
 class CartItemWidget extends StatelessWidget {

@@ -1,5 +1,5 @@
-import 'package:amazon_clone/utils/color_themes.dart';
-import 'package:amazon_clone/utils/utils.dart';
+import 'package:dogmart/utils/color_themes.dart';
+import 'package:dogmart/utils/utils.dart';
 import 'package:flutter/material.dart';
 
 class ProductsShowcaseListView extends StatelessWidget {

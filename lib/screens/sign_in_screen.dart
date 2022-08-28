@@ -1,10 +1,10 @@
-import 'package:amazon_clone/resources/authentication_methods.dart';
-import 'package:amazon_clone/screens/sign_up_screen.dart';
-import 'package:amazon_clone/utils/color_themes.dart';
-import 'package:amazon_clone/utils/constants.dart';
-import 'package:amazon_clone/utils/utils.dart';
-import 'package:amazon_clone/widgets/custom_main_button.dart';
-import 'package:amazon_clone/widgets/text_field_widget.dart';
+import 'package:dogmart/resources/authentication_methods.dart';
+import 'package:dogmart/screens/sign_up_screen.dart';
+import 'package:dogmart/utils/color_themes.dart';
+import 'package:dogmart/utils/constants.dart';
+import 'package:dogmart/utils/utils.dart';
+import 'package:dogmart/widgets/custom_main_button.dart';
+import 'package:dogmart/widgets/text_field_widget.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -50,7 +50,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Image.network(
-                      amazonLogo,
+                      dogLogo,
                       height: screenSize.height * 0.10,
                     ),
                     Container(
@@ -93,7 +93,7 @@ class _SignInScreenState extends State<SignInScreen> {
                                   style: TextStyle(
                                       letterSpacing: 0.6, color: Colors.black),
                                 ),
-                                color: yellowColor,
+                                color: blueColor,
                                 isLoading: isLoading,
                                 onPressed: () async {
                                   setState(() {
@@ -130,7 +130,7 @@ class _SignInScreenState extends State<SignInScreen> {
                         const Padding(
                           padding: EdgeInsets.symmetric(horizontal: 10),
                           child: Text(
-                            "New to Amazon?",
+                            "New to DogMart?",
                             style: TextStyle(color: Colors.grey),
                           ),
                         ),
@@ -144,7 +144,7 @@ class _SignInScreenState extends State<SignInScreen> {
                     ),
                     CustomMainButton(
                         child: const Text(
-                          "Create an Amazon Account",
+                          "Create an new Account",
                           style: TextStyle(
                             letterSpacing: 0.6,
                             color: Colors.black,

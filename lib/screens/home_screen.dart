@@ -1,13 +1,13 @@
-import 'package:amazon_clone/model/user_details_model.dart';
-import 'package:amazon_clone/resources/cloudfirestore_methods.dart';
-import 'package:amazon_clone/utils/constants.dart';
-import 'package:amazon_clone/widgets/ad_banner_widget.dart';
-import 'package:amazon_clone/widgets/categories_horizontal_list_view_bar.dart';
-import 'package:amazon_clone/widgets/loading_widget.dart';
-import 'package:amazon_clone/widgets/products_showcase_list_view.dart';
-import 'package:amazon_clone/widgets/search_bar_widget.dart';
-import 'package:amazon_clone/widgets/simple_product_widget.dart';
-import 'package:amazon_clone/widgets/user_details_bar.dart';
+import 'package:dogmart/model/user_details_model.dart';
+import 'package:dogmart/resources/cloudfirestore_methods.dart';
+import 'package:dogmart/utils/constants.dart';
+import 'package:dogmart/widgets/ad_banner_widget.dart';
+import 'package:dogmart/widgets/categories_horizontal_list_view_bar.dart';
+import 'package:dogmart/widgets/loading_widget.dart';
+import 'package:dogmart/widgets/products_showcase_list_view.dart';
+import 'package:dogmart/widgets/search_bar_widget.dart';
+import 'package:dogmart/widgets/simple_product_widget.dart';
+import 'package:dogmart/widgets/user_details_bar.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -52,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
     List<Widget> temp50 =
         await CloudFirestoreClass().getProductsFromDiscount(50);
     List<Widget> temp0 = await CloudFirestoreClass().getProductsFromDiscount(0);
-    print("everything is done");
+
     setState(() {
       discount70 = temp70;
       discount60 = temp60;
@@ -80,11 +80,11 @@ class _HomeScreenState extends State<HomeScreen> {
                       controller: controller,
                       child: Column(
                         children: [
-                          SizedBox(
+                          const SizedBox(
                             height: kAppBarHeight / 2,
                           ),
-                          CategoriesHorizontalListViewBar(),
-                          AdBannerWidget(),
+                          const CategoriesHorizontalListViewBar(),
+                          const AdBannerWidget(),
                           ProductsShowcaseListView(
                               title: "Upto 70% Off", children: discount70!),
                           ProductsShowcaseListView(

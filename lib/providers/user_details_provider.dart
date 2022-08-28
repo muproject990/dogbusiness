@@ -1,5 +1,5 @@
-import 'package:amazon_clone/model/user_details_model.dart';
-import 'package:amazon_clone/resources/cloudfirestore_methods.dart';
+import 'package:dogmart/model/user_details_model.dart';
+import 'package:dogmart/resources/cloudfirestore_methods.dart';
 import 'package:flutter/material.dart';
 
 class UserDetailsProvider with ChangeNotifier {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-const Color yellowColor = Color(0xfffed813); //Yellow
+const Color blueColor = Color.fromARGB(255, 10, 105, 168); //Yellow
 
 const Color activeCyanColor = Color(0xff0a7c97);
 

@@ -1,19 +1,19 @@
-import 'package:amazon_clone/model/product_model.dart';
-import 'package:amazon_clone/model/review_model.dart';
-import 'package:amazon_clone/model/user_details_model.dart';
-import 'package:amazon_clone/providers/user_details_provider.dart';
-import 'package:amazon_clone/resources/cloudfirestore_methods.dart';
-import 'package:amazon_clone/utils/color_themes.dart';
-import 'package:amazon_clone/utils/constants.dart';
-import 'package:amazon_clone/utils/utils.dart';
-import 'package:amazon_clone/widgets/cost_widget.dart';
-import 'package:amazon_clone/widgets/custom_main_button.dart';
-import 'package:amazon_clone/widgets/custom_simple_rounded_button.dart';
-import 'package:amazon_clone/widgets/rating_star_widget.dart';
-import 'package:amazon_clone/widgets/review_dialog.dart';
-import 'package:amazon_clone/widgets/review_widget.dart';
-import 'package:amazon_clone/widgets/search_bar_widget.dart';
-import 'package:amazon_clone/widgets/user_details_bar.dart';
+import 'package:dogmart/model/product_model.dart';
+import 'package:dogmart/model/review_model.dart';
+import 'package:dogmart/model/user_details_model.dart';
+import 'package:dogmart/providers/user_details_provider.dart';
+import 'package:dogmart/resources/cloudfirestore_methods.dart';
+import 'package:dogmart/utils/color_themes.dart';
+import 'package:dogmart/utils/constants.dart';
+import 'package:dogmart/utils/utils.dart';
+import 'package:dogmart/widgets/cost_widget.dart';
+import 'package:dogmart/widgets/custom_main_button.dart';
+import 'package:dogmart/widgets/custom_simple_rounded_button.dart';
+import 'package:dogmart/widgets/rating_star_widget.dart';
+import 'package:dogmart/widgets/review_dialog.dart';
+import 'package:dogmart/widgets/review_widget.dart';
+import 'package:dogmart/widgets/search_bar_widget.dart';
+import 'package:dogmart/widgets/user_details_bar.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -120,7 +120,7 @@ class _ProductScreenState extends State<ProductScreen> {
                                   "Add to cart",
                                   style: TextStyle(color: Colors.black),
                                 ),
-                                color: yellowColor,
+                                color: blueColor,
                                 isLoading: false,
                                 onPressed: () async {
                                   await CloudFirestoreClass().addProductToCart(

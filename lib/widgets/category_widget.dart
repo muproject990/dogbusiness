@@ -1,5 +1,5 @@
-import 'package:amazon_clone/screens/results_screen.dart';
-import 'package:amazon_clone/utils/constants.dart';
+import 'package:dogmart/screens/results_screen.dart';
+import 'package:dogmart/utils/constants.dart';
 import 'package:flutter/material.dart';
 
 class CategoryWidget extends StatelessWidget {

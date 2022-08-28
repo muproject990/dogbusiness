@@ -1,4 +1,4 @@
-import 'package:amazon_clone/utils/utils.dart';
+import 'package:dogmart/utils/utils.dart';
 import 'package:flutter/material.dart';
 
 class CustomMainButton extends StatelessWidget {

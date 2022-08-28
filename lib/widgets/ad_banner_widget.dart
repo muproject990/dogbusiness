@@ -1,6 +1,6 @@
-import 'package:amazon_clone/utils/color_themes.dart';
-import 'package:amazon_clone/utils/constants.dart';
-import 'package:amazon_clone/utils/utils.dart';
+import 'package:dogmart/utils/color_themes.dart';
+import 'package:dogmart/utils/constants.dart';
+import 'package:dogmart/utils/utils.dart';
 import 'package:flutter/material.dart';
 
 class AdBannerWidget extends StatefulWidget {
@@ -35,8 +35,10 @@ class _AdBannerWidgetState extends State<AdBannerWidget> {
               },
               child: SizedBox(
                 width: double.infinity,
+                height: screenSize.height * .35,
                 child: Image.network(
                   largeAds[currentAd],
+                  fit: BoxFit.fitWidth,
                 ),
               ),
             ),
@@ -111,15 +113,21 @@ class _AdBannerWidgetState extends State<AdBannerWidget> {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Image.network(
-                  smallAds[index],
+                FittedBox(
+                  fit: BoxFit.fill,
+                  child: Image.network(
+                    smallAds[index],
+                    height: 90,
+                    width: 100,
+                    fit: BoxFit.fill,
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 10),
                   child: Text(
                     adItemNames[index],
                     style: const TextStyle(
-                        fontSize: 13, fontWeight: FontWeight.w500),
+                        fontSize: 15, fontWeight: FontWeight.w500),
                   ),
                 )
               ],

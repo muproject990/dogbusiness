@@ -1,11 +1,11 @@
 import 'dart:developer';
-import 'package:amazon_clone/resources/authentication_methods.dart';
-import 'package:amazon_clone/screens/sign_in_screen.dart';
-import 'package:amazon_clone/utils/color_themes.dart';
-import 'package:amazon_clone/utils/constants.dart';
-import 'package:amazon_clone/utils/utils.dart';
-import 'package:amazon_clone/widgets/custom_main_button.dart';
-import 'package:amazon_clone/widgets/text_field_widget.dart';
+import 'package:dogmart/resources/authentication_methods.dart';
+import 'package:dogmart/screens/sign_in_screen.dart';
+import 'package:dogmart/utils/color_themes.dart';
+import 'package:dogmart/utils/constants.dart';
+import 'package:dogmart/utils/utils.dart';
+import 'package:dogmart/widgets/custom_main_button.dart';
+import 'package:dogmart/widgets/text_field_widget.dart';
 import 'package:flutter/material.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -50,7 +50,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Image.network(
-                      amazonLogo,
+                      dogLogo,
                       height: screenSize.height * 0.10,
                     ),
                     SizedBox(
@@ -106,9 +106,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                   child: const Text(
                                     "Sign Un",
                                     style: TextStyle(
-                                        letterSpacing: 0.6, color: Colors.black),
+                                        letterSpacing: 0.6,
+                                        color: Colors.black),
                                   ),
-                                  color: yellowColor,
+                                  color: blueColor,
                                   isLoading: isLoading,
                                   onPressed: () async {
                                     setState(() {

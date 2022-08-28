@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "962653854176",
-    "project_id": "clone-ac2ba",
-    "storage_bucket": "clone-ac2ba.appspot.com"
+    "project_number": "912010379300",
+    "project_id": "dogbusiness-eaec8",
+    "storage_bucket": "dogbusiness-eaec8.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:962653854176:android:3e1c91dca3797888d33385",
+        "mobilesdk_app_id": "1:912010379300:android:a6248f79be63a0f924d8b1",
         "android_client_info": {
-          "package_name": "com.example.amazon_clone"
+          "package_name": "com.aavash.dogbusiness"
         }
       },
       "oauth_client": [
         {
-          "client_id": "962653854176-752d3vs4mo2iiobjgi8ibscf2mckf9iq.apps.googleusercontent.com",
+          "client_id": "912010379300-dg0ed9u35o444iusamno9dft4avtqk7j.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCllxkrEMc-hy7NngUh0wkFsCRIKq4auvw"
+          "current_key": "AIzaSyCeinr-1m3up4VJlCpw9EiwoOCNlAeA9g8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "962653854176-752d3vs4mo2iiobjgi8ibscf2mckf9iq.apps.googleusercontent.com",
+              "client_id": "912010379300-dg0ed9u35o444iusamno9dft4avtqk7j.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

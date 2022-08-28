@@ -1,14 +1,9 @@
-import 'dart:math';
 
-import 'package:amazon_clone/layout/screen_layout.dart';
-import 'package:amazon_clone/model/product_model.dart';
-import 'package:amazon_clone/providers/user_details_provider.dart';
-import 'package:amazon_clone/screens/home_screen.dart';
-import 'package:amazon_clone/screens/product_screen.dart';
-import 'package:amazon_clone/screens/results_screen.dart';
-import 'package:amazon_clone/screens/sell_screen.dart';
-import 'package:amazon_clone/screens/sign_in_screen.dart';
-import 'package:amazon_clone/utils/color_themes.dart';
+import 'package:dogmart/layout/screen_layout.dart';
+import 'package:dogmart/providers/user_details_provider.dart';
+
+import 'package:dogmart/screens/sign_in_screen.dart';
+import 'package:dogmart/utils/color_themes.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
@@ -20,21 +15,21 @@ void main() async {
   if (kIsWeb) {
     await Firebase.initializeApp(
         options: const FirebaseOptions(
-      apiKey: "AIzaSyDp_Y8yGtw_F8Vp4o3xTlsEPhW7LqToioA",
-      authDomain: "clone-cb58f.firebaseapp.com",
-      projectId: "clone-cb58f",
-      storageBucket: "clone-cb58f.appspot.com",
-      messagingSenderId: "637941856879",
-      appId: "1:637941856879:web:5aa135c3c7be31ccafeb9a",
-    ));
+            apiKey: "AIzaSyC3bBBOZBxR8zWNjpfWIrtuGc6OjhWls4k",
+            authDomain: "dogbusiness-eaec8.firebaseapp.com",
+            projectId: "dogbusiness-eaec8",
+            storageBucket: "dogbusiness-eaec8.appspot.com",
+            messagingSenderId: "912010379300",
+            appId: "1:912010379300:web:4b2f1a65c999d21224d8b1",
+            measurementId: "G-LEJMFM0R1Q"));
   } else {
     await Firebase.initializeApp();
   }
-  runApp(const AmazonClone());
+  runApp(const DogMart());
 }
 
-class AmazonClone extends StatelessWidget {
-  const AmazonClone({Key? key}) : super(key: key);
+class DogMart extends StatelessWidget {
+  const DogMart({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

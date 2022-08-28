@@ -1,4 +1,4 @@
-package aavashpaudel.org.amazon_clone
+package com.example.dogbusiness
 
 import io.flutter.embedding.android.FlutterActivity
 

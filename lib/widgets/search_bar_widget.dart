@@ -1,13 +1,13 @@
-import 'package:amazon_clone/screens/results_screen.dart';
-import 'package:amazon_clone/screens/search_screen.dart';
-import 'package:amazon_clone/utils/color_themes.dart';
-import 'package:amazon_clone/utils/constants.dart';
-import 'package:amazon_clone/utils/utils.dart';
+import 'package:dogmart/screens/results_screen.dart';
+import 'package:dogmart/screens/search_screen.dart';
+import 'package:dogmart/utils/color_themes.dart';
+import 'package:dogmart/utils/constants.dart';
+import 'package:dogmart/utils/utils.dart';
 import 'package:flutter/material.dart';
 
 class SearchBarWidget extends StatelessWidget with PreferredSizeWidget {
   final bool isReadOnly;
-  final bool  hasBackButton;
+  final bool hasBackButton;
   SearchBarWidget({
     Key? key,
     required this.isReadOnly,
@@ -32,12 +32,15 @@ class SearchBarWidget extends StatelessWidget with PreferredSizeWidget {
     return Container(
       height: kAppBarHeight,
       decoration: const BoxDecoration(
-        gradient: LinearGradient(
-          colors: backgroundGradient,
-          begin: Alignment.centerLeft,
-          end: Alignment.centerRight,
-        ),
+        color: Colors.teal,
       ),
+      // decoration: const BoxDecoration(
+      //   gradient: LinearGradient(
+      //     colors: backgroundGradient,
+      //     begin: Alignment.centerLeft,
+      //     end: Alignment.centerRight,
+      //   ),
+      // ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
@@ -80,7 +83,7 @@ class SearchBarWidget extends StatelessWidget with PreferredSizeWidget {
                   }
                 },
                 decoration: InputDecoration(
-                  hintText: "Search for something in amazon",
+                  hintText: "Search for something in dogmart",
                   fillColor: Colors.white,
                   filled: true,
                   border: border,

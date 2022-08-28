@@ -1,7 +1,7 @@
-import 'package:amazon_clone/model/product_model.dart';
-import 'package:amazon_clone/widgets/loading_widget.dart';
-import 'package:amazon_clone/widgets/results_widget.dart';
-import 'package:amazon_clone/widgets/search_bar_widget.dart';
+import 'package:dogmart/model/product_model.dart';
+import 'package:dogmart/widgets/loading_widget.dart';
+import 'package:dogmart/widgets/results_widget.dart';
+import 'package:dogmart/widgets/search_bar_widget.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
@@ -57,7 +57,9 @@ class ResultsScreen extends StatelessWidget {
                         return GridView.builder(
                             gridDelegate:
                                 const SliverGridDelegateWithFixedCrossAxisCount(
-                                    crossAxisCount: 3, childAspectRatio: 2 / 3.5),
+                              crossAxisCount: 3,
+                              childAspectRatio: 2 / 3.5,
+                            ),
                             itemCount: snapshot.data!.docs.length,
                             itemBuilder: (context, index) {
                               ProductModel product =

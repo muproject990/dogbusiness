@@ -1,16 +1,16 @@
 import 'dart:ui';
 
-import 'package:amazon_clone/model/product_model.dart';
-import 'package:amazon_clone/model/user_details_model.dart';
-import 'package:amazon_clone/providers/user_details_provider.dart';
-import 'package:amazon_clone/resources/cloudfirestore_methods.dart';
-import 'package:amazon_clone/utils/color_themes.dart';
-import 'package:amazon_clone/utils/constants.dart';
-import 'package:amazon_clone/utils/utils.dart';
-import 'package:amazon_clone/widgets/cart_item_widget.dart';
-import 'package:amazon_clone/widgets/custom_main_button.dart';
-import 'package:amazon_clone/widgets/search_bar_widget.dart';
-import 'package:amazon_clone/widgets/user_details_bar.dart';
+import 'package:dogmart/model/product_model.dart';
+import 'package:dogmart/model/user_details_model.dart';
+import 'package:dogmart/providers/user_details_provider.dart';
+import 'package:dogmart/resources/cloudfirestore_methods.dart';
+import 'package:dogmart/utils/color_themes.dart';
+import 'package:dogmart/utils/constants.dart';
+import 'package:dogmart/utils/utils.dart';
+import 'package:dogmart/widgets/cart_item_widget.dart';
+import 'package:dogmart/widgets/custom_main_button.dart';
+import 'package:dogmart/widgets/search_bar_widget.dart';
+import 'package:dogmart/widgets/user_details_bar.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -57,7 +57,7 @@ class _CartScreenState extends State<CartScreen> {
                                 child: const Text(
                                   "Loading",
                                 ),
-                                color: yellowColor,
+                                color: blueColor,
                                 isLoading: true,
                                 onPressed: () {});
                           } else {
@@ -66,7 +66,7 @@ class _CartScreenState extends State<CartScreen> {
                                   "Proceed to buy (${snapshot.data!.docs.length}) items",
                                   style: const TextStyle(color: Colors.black),
                                 ),
-                                color: yellowColor,
+                                color: blueColor,
                                 isLoading: false,
                                 onPressed: () async {
                                   await CloudFirestoreClass().buyAllItemsInCart(

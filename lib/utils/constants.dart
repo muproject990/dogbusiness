@@ -1,9 +1,9 @@
-import 'package:amazon_clone/model/product_model.dart';
-import 'package:amazon_clone/screens/account_screen.dart';
-import 'package:amazon_clone/screens/cart_screen.dart';
-import 'package:amazon_clone/screens/home_screen.dart';
-import 'package:amazon_clone/screens/more_screen.dart';
-import 'package:amazon_clone/widgets/simple_product_widget.dart';
+import 'package:dogmart/model/product_model.dart';
+import 'package:dogmart/screens/account_screen.dart';
+import 'package:dogmart/screens/cart_screen.dart';
+import 'package:dogmart/screens/home_screen.dart';
+import 'package:dogmart/screens/more_screen.dart';
+import 'package:dogmart/widgets/simple_product_widget.dart';
 import 'package:flutter/material.dart';
 
 const double kAppBarHeight = 80;
@@ -12,15 +12,10 @@ const String amazonLogoUrl =
     "https://i7.pngguru.com/preview/804/833/264/golden-retriever-pet-sitting-cat-dogs.jpg";
 
 const List<String> categoriesList = [
-  "Prime",
-  "Mobiles",
-  "Fashion",
-  "Electronics",
-  "Home",
-  "Fresh",
-  "Appliances",
-  "Books, Toys",
-  "Essential"
+  "Labrador Retriever",
+  "German Shepherd",
+  "Golden Retriever",
+  "Bulldog",
 ];
 
 const List<Widget> screens = [
@@ -31,42 +26,37 @@ const List<Widget> screens = [
 ];
 
 const List<String> categoryLogos = [
-  "https://m.media-amazon.com/images/I/11uufjN3lYL._SX90_SY90_.png",
-  "https://m.media-amazon.com/images/I/116KbsvwCRL._SX90_SY90_.png",
-  "https://m.media-amazon.com/images/I/115yueUc1aL._SX90_SY90_.png",
-  "https://m.media-amazon.com/images/I/11qyfRJvEbL._SX90_SY90_.png",
-  "https://m.media-amazon.com/images/I/11BIyKooluL._SX90_SY90_.png",
-  "https://m.media-amazon.com/images/I/11CR97WoieL._SX90_SY90_.png",
-  "https://m.media-amazon.com/images/I/01cPTp7SLWL._SX90_SY90_.png",
-  "https://m.media-amazon.com/images/I/11yLyO9f9ZL._SX90_SY90_.png",
-  "https://m.media-amazon.com/images/I/11M0jYc-tRL._SX90_SY90_.png",
+  "https://www.mydogsname.com/wp-content/uploads/2015/09/labrador-retriever-thumb.jpg",
+  "https://www.mydogsname.com/wp-content/uploads/2016/02/german-shepherd-thumb.jpg",
+  "https://www.mydogsname.com/wp-content/uploads/2016/02/golden-retriever-thumb.jpg",
+  "https://www.mydogsname.com/wp-content/uploads/2016/02/bulldog-thumb.jpg",
 ];
 
 const List<String> largeAds = [
-  "https://m.media-amazon.com/images/I/51QISbJp5-L._SX3000_.jpg",
-  "https://m.media-amazon.com/images/I/61jmYNrfVoL._SX3000_.jpg",
-  "https://m.media-amazon.com/images/I/612a5cTzBiL._SX3000_.jpg",
-  "https://m.media-amazon.com/images/I/61fiSvze0eL._SX3000_.jpg",
-  "https://m.media-amazon.com/images/I/61PzxXMH-0L._SX3000_.jpg",
+  "https://images.pexels.com/photos/4681107/pexels-photo-4681107.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "https://images.pexels.com/photos/2797318/pexels-photo-2797318.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "https://images.pexels.com/photos/1741235/pexels-photo-1741235.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "https://images.pexels.com/photos/4587998/pexels-photo-4587998.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "https://images.pexels.com/photos/731022/pexels-photo-731022.jpeg?auto=compress&cs=tinysrgb&w=1600",
 ];
 
 const List<String> smallAds = [
-  "https://m.media-amazon.com/images/I/11M5KkkmavL._SS70_.png",
-  "https://m.media-amazon.com/images/I/11iTpTDy6TL._SS70_.png",
-  "https://m.media-amazon.com/images/I/11dGLeeNRcL._SS70_.png",
-  "https://m.media-amazon.com/images/I/11kOjZtNhnL._SS70_.png",
+  "https://media.ttmind.com/Media/tech/article_3_6-28-20198-02-35AM.png",
+  "https://english.onlinekhabar.com/wp-content/uploads/2020/09/eSewa.jpg",
+  "https://english.onlinekhabar.com/wp-content/uploads/2020/09/eSewa.jpg",
+  "https://techsathi.com/wp-content/uploads/2020/04/Nepal-Telecom-vs-Ncell.jpg"
 ];
 
 const List<String> adItemNames = [
-  "Amazon Pay",
+  "Khalti",
+  "Esewa",
+  "Ime Pay",
   "Recharge",
-  "Rewards",
-  "Pay Bills"
 ];
 
 //Dont even attemp to scroll to the end of this manually lmao
-const String amazonLogo =
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png";
+const String dogLogo =
+    "https://img.freepik.com/premium-vector/happy-dog-face-logo_8580-338.jpg?w=2000";
 
 List<Widget> testChildren = [
   SimpleProductWidget(

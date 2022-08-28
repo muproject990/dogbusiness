@@ -1,9 +1,9 @@
-import 'package:amazon_clone/model/product_model.dart';
-import 'package:amazon_clone/screens/product_screen.dart';
-import 'package:amazon_clone/utils/color_themes.dart';
-import 'package:amazon_clone/utils/utils.dart';
-import 'package:amazon_clone/widgets/cost_widget.dart';
-import 'package:amazon_clone/widgets/rating_star_widget.dart';
+import 'package:dogmart/model/product_model.dart';
+import 'package:dogmart/screens/product_screen.dart';
+import 'package:dogmart/utils/color_themes.dart';
+import 'package:dogmart/utils/utils.dart';
+import 'package:dogmart/widgets/cost_widget.dart';
+import 'package:dogmart/widgets/rating_star_widget.dart';
 import 'package:flutter/material.dart';
 
 class ResultsWidget extends StatelessWidget {

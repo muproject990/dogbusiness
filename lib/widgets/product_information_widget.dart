@@ -1,6 +1,6 @@
-import 'package:amazon_clone/utils/color_themes.dart';
-import 'package:amazon_clone/utils/utils.dart';
-import 'package:amazon_clone/widgets/cost_widget.dart';
+import 'package:dogmart/utils/color_themes.dart';
+import 'package:dogmart/utils/utils.dart';
+import 'package:dogmart/widgets/cost_widget.dart';
 import 'package:flutter/material.dart';
 
 class ProductInformationWidget extends StatelessWidget {

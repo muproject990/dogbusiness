@@ -1,15 +1,15 @@
-import 'package:amazon_clone/model/order_request_model.dart';
-import 'package:amazon_clone/model/product_model.dart';
-import 'package:amazon_clone/model/user_details_model.dart';
-import 'package:amazon_clone/providers/user_details_provider.dart';
-import 'package:amazon_clone/screens/sell_screen.dart';
-import 'package:amazon_clone/utils/color_themes.dart';
-import 'package:amazon_clone/utils/constants.dart';
-import 'package:amazon_clone/utils/utils.dart';
-import 'package:amazon_clone/widgets/account_screen_app_bar.dart';
-import 'package:amazon_clone/widgets/custom_main_button.dart';
-import 'package:amazon_clone/widgets/products_showcase_list_view.dart';
-import 'package:amazon_clone/widgets/simple_product_widget.dart';
+import 'package:dogmart/model/order_request_model.dart';
+import 'package:dogmart/model/product_model.dart';
+import 'package:dogmart/model/user_details_model.dart';
+import 'package:dogmart/providers/user_details_provider.dart';
+import 'package:dogmart/screens/sell_screen.dart';
+import 'package:dogmart/utils/color_themes.dart';
+import 'package:dogmart/utils/constants.dart';
+import 'package:dogmart/utils/utils.dart';
+import 'package:dogmart/widgets/account_screen_app_bar.dart';
+import 'package:dogmart/widgets/custom_main_button.dart';
+import 'package:dogmart/widgets/products_showcase_list_view.dart';
+import 'package:dogmart/widgets/simple_product_widget.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -56,7 +56,7 @@ class _AccountScreenState extends State<AccountScreen> {
                   child: CustomMainButton(
                       child: const Text("Sell",
                           style: TextStyle(color: Colors.black)),
-                      color: yellowColor,
+                      color: blueColor,
                       isLoading: false,
                       onPressed: () {
                         Navigator.push(
@@ -81,7 +81,8 @@ class _AccountScreenState extends State<AccountScreen> {
                         for (int i = 0; i < snapshot.data!.docs.length; i++) {
                           ProductModel model = ProductModel.getModelFromJson(
                               json: snapshot.data!.docs[i].data());
-                          children.add(SimpleProductWidget(productModel: model));
+                          children
+                              .add(SimpleProductWidget(productModel: model));
                         }
                         return ProductsShowcaseListView(
                             title: "Your orders", children: children);
@@ -93,7 +94,8 @@ class _AccountScreenState extends State<AccountScreen> {
                     alignment: Alignment.centerLeft,
                     child: Text(
                       "Order Requests",
-                      style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
+                      style:
+                          TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
                     ),
                   ),
                 ),
@@ -116,13 +118,13 @@ class _AccountScreenState extends State<AccountScreen> {
                                 itemBuilder: (context, index) {
                                   OrderRequestModel model =
                                       OrderRequestModel.getModelFromJson(
-                                          json:
-                                              snapshot.data!.docs[index].data());
+                                          json: snapshot.data!.docs[index]
+                                              .data());
                                   return ListTile(
                                     title: Text(
                                       "Order: ${model.orderName}",
-                                      style:
-                                          TextStyle(fontWeight: FontWeight.w500),
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w500),
                                     ),
                                     subtitle:
                                         Text("Address: ${model.buyersAddress}"),
@@ -133,7 +135,8 @@ class _AccountScreenState extends State<AccountScreen> {
                                               .doc(FirebaseAuth
                                                   .instance.currentUser!.uid)
                                               .collection("orderRequests")
-                                              .doc(snapshot.data!.docs[index].id)
+                                              .doc(
+                                                  snapshot.data!.docs[index].id)
                                               .delete();
                                         },
                                         icon: Icon(Icons.check)),
